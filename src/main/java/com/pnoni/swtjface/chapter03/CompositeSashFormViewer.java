@@ -1,4 +1,4 @@
-package com.pnoni.swfjface.chapter02;
+package com.pnoni.swtjface.chapter03;
 
 import org.eclipse.jface.window.ApplicationWindow;
 import org.eclipse.swt.widgets.Composite;
@@ -11,23 +11,22 @@ import org.eclipse.swt.widgets.Display;
  *
  * Created by julio on 2016. 7. 8..
  */
-public class WidgetWindow extends ApplicationWindow {
+public class CompositeSashFormViewer extends ApplicationWindow {
 
-    public WidgetWindow() {
+    public CompositeSashFormViewer() {
         super(null);
     }
 
     @Override
     protected Control createContents(Composite parent) {
-        getShell().setText("Widget Window");
-        parent.setSize(400, 250);
+        new CompositeSashForm(parent);
         return parent;
     }
 
     public static void main(String[] args) {
-        WidgetWindow widgetWindow = new WidgetWindow();
-        widgetWindow.setBlockOnOpen(true);
-        widgetWindow.open();
+        CompositeSashFormViewer compositeViewer = new CompositeSashFormViewer();
+        compositeViewer.setBlockOnOpen(true);
+        compositeViewer.open();
         Display.getCurrent().dispose();
     }
 }

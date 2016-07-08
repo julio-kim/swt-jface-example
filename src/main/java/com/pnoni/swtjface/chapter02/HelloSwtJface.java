@@ -1,4 +1,4 @@
-package com.pnoni.swfjface.chapter02;
+package com.pnoni.swtjface.chapter02;
 
 import org.eclipse.jface.window.ApplicationWindow;
 import org.eclipse.swt.SWT;
