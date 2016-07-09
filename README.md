@@ -1,1 +1,1 @@
-# swt-jface-example
+# SWT/JFace in Action 예제정리
